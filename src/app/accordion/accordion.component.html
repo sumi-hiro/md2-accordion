@@ -1,14 +1,26 @@
-<p>
-  accordion works!
-</p>
 <section class="demo-card demo-basic">
-  <h2>Accordion</h2>
-  <hr />
-  <div>
-    <md2-accordion [multiple]="multiple">
-      <md2-accordion-tab class="test" *ngFor="let tab of accordions" [header]="tab.title" [active]="tab.active" [disabled]="tab.disabled">
+  <h2>Accordionのサンプル
+  </h2>
+  <p>検索エリア実装イメージ</p>
+  <div class="searchArea">
+    <md2-accordion [multiple]="">
+      <!-- <md2-accordion-tab class="test" *ngFor="let tab of accordions" [header]="tab.title" [active]="tab.active" [disabled]="tab.disabled">
         {{tab.content}}
-      </md2-accordion-tab>
+      </md2-accordion-tab> -->
+    <md2-accordion-tab [header]="accordionTitle">
+      <p>
+        検索項目1-1:
+        <input type="text">
+        検索項目1-2:
+        <input type="text">
+      </p>
+      <p>
+        検索項目2-1:
+        <input type="text">
+        検索項目2-2:
+        <input type="text">
+      </p>
+    </md2-accordion-tab>
     </md2-accordion>
   </div>
 </section>
